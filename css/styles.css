@@ -1,0 +1,434 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header{
+    background-color: rgb(13, 25, 63);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+header nav{
+    width: 100%;
+}
+
+.logo{
+    height: 100px;
+}
+
+header nav ul{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h2{
+    margin: 10px;
+    text-align: left;
+    font-style: italic;
+}
+
+.texto-bienvenida{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+section{
+    margin: 10px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.grilla-contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 auto);
+    margin: 1rem 3rem 3rem 3rem;
+    gap: 1rem;
+}
+
+.grilla-contenido-nosotros div{
+    width: 100%;
+    text-align: center;
+}
+
+.grilla-contenido-nosotros div img{
+    border-radius: 50%;
+    height: 100px;
+    position: relative;
+    top: -65px;
+}
+
+.contenedor-andrea{
+    margin-bottom: 100px;
+    box-shadow: 0px 10px 23px 10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 23px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 23px 10px rgba(0,0,0,0.75);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contenedor-juan{
+    margin-bottom: 100px;
+    box-shadow: 0px 10px 23px 10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 23px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 23px 10px rgba(0,0,0,0.75);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contenedor-maria{
+    margin-bottom: 100px;
+    box-shadow: 0px 10px 23px 10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 10px 23px 10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 23px 10px rgba(0,0,0,0.75);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.foto-andrea{
+    height: 50px;
+}
+
+.foto-juan{
+    height: 50px;
+}
+
+.foto-maria{
+    height: 50px;
+}
+
+.nombre-andrea{
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.nombre-juan{
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.nombre-maria{
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grilla-contenido-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 auto);
+    margin: 1rem 3rem 3rem 3rem;
+    gap: 1rem;
+}
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.grilla-formulario{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(6 1fr);
+    row-gap: 10px;
+    grid-template-areas:
+    "lb-nombre tb-nombre tb-nombre"
+    "lb-apellido tb-apellido tb-apellido"
+    "lb-email tb-email tb-email"
+    "lb-mensaje lb-mensaje lb-mensaje"
+    "ta-mensaje ta-mensaje ta-mensaje"
+    "btn-enviar btn-enviar btn-enviar" 
+    ;
+}
+
+.lb-nombre{
+    grid-area: lb-nombre;
+}
+.tb-nombre{
+    grid-area: tb-nombre;
+    border:1px solid rgb(13, 25, 63);
+}
+.lb-apellido{
+    grid-area: lb-apellido;
+}
+.tb-apellido{
+    grid-area: tb-apellido;
+    border:1px solid rgb(13, 25, 63);
+}
+.lb-email{
+    grid-area: lb-email;
+}
+.tb-email{
+    grid-area: tb-email;
+    border:1px solid rgb(13, 25, 63);
+}
+.lb-mensaje{
+    grid-area: lb-mensaje;
+}
+.ta-mensaje{
+    grid-area: ta-mensaje;
+    border:1px solid rgb(13, 25, 63);
+    resize: none;
+}
+.btn-enviar{
+    grid-area: btn-enviar;
+    box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+	border-radius:6px;
+	border:1px solid #337fed;
+	cursor:pointer;
+	color:#ffffff;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #1570cd;
+}
+
+.btn-enviar:hover{
+    background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+
+.btn-enviar:active{
+    position:relative;
+	top:1px;
+}
+
+.contenedor-mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-carousel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position-fixed{
+    position: fixed;
+    width: 100px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.position-fixed img{
+    width: 100px;
+}
+
+footer{
+    background-color: #90E0EF;
+    padding: 10px 0;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+footer div img{
+    width: 30px;
+}
+
+
+/* ESTILOS TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    header{
+        background-color: rgb(13, 25, 63);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    
+    header nav{
+        width: 100%;
+    }
+    
+    .logo{
+        height: 100px;
+    }
+    
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    header nav ul li{
+        list-style-type: none;
+    }
+    
+    header nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    header nav ul li a:hover{
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    .grilla-contenido-main{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 50px;
+        grid-template-areas:
+        "mision por-que"
+        "servicios unete"
+        ;
+    }
+
+    .mision{
+        grid-area: mision;
+    }
+    .por-que{
+        grid-area: por-que;
+    }
+    .servicios{
+        grid-area: servicios;
+    }
+    .unete{
+        grid-area: unete;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .grilla-contenido-contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        margin: 1rem 3rem 3rem 3rem;
+        gap: 1rem;
+        grid-template-areas: "contenedor-formulario contenedor-mapa";
+    }
+
+    .contenedor-formulario{
+        grid-area: contenedor-formulario;
+    }
+    .contenedor-mapa{
+        grid-area: contenedor-mapa;
+        display: flex;
+        justify-content:flex-start;
+    }
+
+}
+
+/*ESTILOS DESKTOP*/
+@media screen and (min-width: 1024px){
+    header{
+        background-color: rgb(13, 25, 63);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+    
+    header nav{
+        width: 100%;
+    }
+    
+    .logo{
+        height: 100px;
+    }
+    
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    header nav ul li{
+        list-style-type: none;
+    }
+    
+    header nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    header nav ul li a:hover{
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    .grilla-contenido-nosotros{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "contenedor-andrea contenedor-juan contenedor-maria" 
+        ;
+    }
+
+    .contenedor-andrea{
+        grid-area: contenedor-andrea;
+    }
+    .contenedor-juan{
+        grid-area: contenedor-juan;
+    }
+    .contenedor-maria{
+        grid-area: contenedor-maria;
+    }
+
+    .grilla-contenido-contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        margin: 1rem 3rem 3rem 3rem;
+        gap: 1rem;
+        grid-template-areas: "contenedor-formulario contenedor-mapa";
+    }
+
+    .contenedor-formulario{
+        grid-area: contenedor-formulario;
+    }
+    .contenedor-mapa{
+        grid-area: contenedor-mapa;
+        display: flex;
+        justify-content:flex-start;
+    }
+}
