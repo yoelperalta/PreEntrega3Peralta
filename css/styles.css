@@ -232,6 +232,10 @@ section{
     align-items: center;
 }
 
+.mapa{
+    width:fit-content;
+}
+
 .contenedor-carousel{
     width: 100%;
     display: flex;
@@ -387,6 +391,11 @@ footer div img{
         justify-content:flex-start;
     }
 
+    .mapa{
+        width: 400px;
+        height: 300px;
+    }
+
     .grilla-contenido-propiedades{
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -470,6 +479,11 @@ footer div img{
         grid-area: contenedor-mapa;
         display: flex;
         justify-content:flex-start;
+    }
+
+    .mapa{
+        width: 500px;
+        height: 400px;
     }
 
     .grilla-contenido-propiedades{
