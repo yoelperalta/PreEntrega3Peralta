@@ -239,6 +239,40 @@ section{
     align-items: center;
 }
 
+.grilla-contenido-propiedades{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 auto);
+    margin: 1rem 3rem 3rem 3rem;
+    gap: 1rem;
+}
+
+.listado-propiedades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.propiedad{
+    margin-bottom: 30px;
+}
+
+.descr-propiedad{
+    text-align: center;
+}
+
+.foto-propiedad{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.resumen-propiedad{
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+}
+
 .position-fixed{
     position: fixed;
     width: 100px;
@@ -353,6 +387,12 @@ footer div img{
         justify-content:flex-start;
     }
 
+    .grilla-contenido-propiedades{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1;
+    }
+
 }
 
 /*ESTILOS DESKTOP*/
@@ -430,5 +470,37 @@ footer div img{
         grid-area: contenedor-mapa;
         display: flex;
         justify-content:flex-start;
+    }
+
+    .grilla-contenido-propiedades{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1;
+    }
+
+    .propiedad{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 2 1fr;
+        column-gap: 20px;
+        border-bottom: solid 1px rgb(13, 25, 63);;
+        grid-template-areas:
+        "foto-propiedad resumen-propiedad"
+        "descr-propiedad descr-propiedad"
+        ;
+    }
+
+    .foto-propiedad{
+        grid-area: foto-propiedad;
+    }
+    .resumen-propiedad{
+        grid-area: resumen-propiedad;
+        text-align: justify;
+        visibility: visible;
+        z-index: inherit;
+        position: relative;
+    }
+    .descr-propiedad{
+        grid-area: descr-propiedad;
     }
 }
