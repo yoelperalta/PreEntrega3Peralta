@@ -1,0 +1,20 @@
+.grilla-contenido-propiedades{
+    .filtros{
+        width: auto;
+    }
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1;
+    .listado-propiedades{
+        .propiedad{
+            .foto-propiedad{
+                width: 100%;
+            }
+            .resumen-propiedad{
+                 visibility: hidden;
+                position: absolute;
+                  z-index: 2;
+             }  
+        }
+    }
+}

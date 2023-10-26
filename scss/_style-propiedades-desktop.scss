@@ -1,0 +1,41 @@
+.grilla-contenido-propiedades{
+    .filtros{
+        width: auto;
+    }
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1;
+    .listado-propiedades{
+        .propiedad{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: repeat(2 1fr);
+            column-gap: 20px;
+            border-bottom: solid 1px rgb(13, 25, 63);;
+            grid-template-areas:
+            "foto-propiedad resumen-propiedad"
+            "descr-propiedad descr-propiedad"
+            ;
+            .foto-propiedad{
+                width: auto;
+                grid-area: foto-propiedad;
+            }
+            .resumen-propiedad{
+                grid-area: resumen-propiedad;
+                text-align: justify;
+                visibility: visible;
+                z-index: inherit;
+                position: relative;
+            }
+            .descr-propiedad{
+                grid-area: descr-propiedad;
+            }
+        }
+    }
+}
+
+
+
+
+
+

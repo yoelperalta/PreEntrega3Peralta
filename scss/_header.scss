@@ -1,0 +1,32 @@
+header{
+    background-color: $color-fondo-header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    nav{
+        width: 100%;
+        ul{
+            display: flex;
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+            li{
+                list-style-type: none;
+                a{
+                    color: $color-texto-header;
+                    text-decoration: none;
+                    &:hover{
+                        color: $color-texto-header;
+                        text-decoration: none;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+.logo{
+    height: 100px;
+}

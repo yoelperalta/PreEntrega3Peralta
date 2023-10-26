@@ -1,0 +1,98 @@
+.grilla-contenido-contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2 auto);
+    gap: 1rem;
+    .contenedor-formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        .grilla-formulario{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: repeat(6 1fr);
+            row-gap: 10px;
+            grid-template-areas:
+            "lb-nombre tb-nombre tb-nombre"
+            "lb-apellido tb-apellido tb-apellido"
+            "lb-email tb-email tb-email"
+            "lb-mensaje lb-mensaje lb-mensaje"
+            "ta-mensaje ta-mensaje ta-mensaje"
+            "btn-enviar btn-enviar btn-enviar" 
+            ;
+            .lb-nombre{
+                grid-area: lb-nombre;
+            }
+            .tb-nombre{
+                grid-area: tb-nombre;
+                border:1px solid rgb(13, 25, 63);
+                &:focus{
+                    background-color: #b6d8ff;
+                }
+            }
+            .lb-apellido{
+                grid-area: lb-apellido;
+            }
+            .tb-apellido{
+                grid-area: tb-apellido;
+                border:1px solid rgb(13, 25, 63);
+                &:focus{
+                    background-color: #b6d8ff;
+                }
+            }
+            .lb-email{
+                grid-area: lb-email;
+            }
+            .tb-email{
+                grid-area: tb-email;
+                border:1px solid rgb(13, 25, 63);
+                &:focus{
+                    background-color: #b6d8ff;
+                }
+            }
+            .lb-mensaje{
+                grid-area: lb-mensaje;
+            }
+            .ta-mensaje{
+                grid-area: ta-mensaje;
+                border:1px solid rgb(13, 25, 63);
+                resize: none;
+                &:focus{
+                    background-color: #b6d8ff;
+                }
+            }
+            .btn-enviar{
+                grid-area: btn-enviar;
+                box-shadow:inset 0px 1px 0px 0px #97c4fe;
+                background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+                background-color:#3d94f6;
+                border-radius:6px;
+                border:1px solid #337fed;
+                cursor:pointer;
+                color:#ffffff;
+                padding:6px 24px;
+                text-decoration:none;
+                text-shadow:0px 1px 0px #1570cd;
+                &:hover{
+                    background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	                background-color:#1e62d0;
+                }
+                &:active{
+                    position:relative;
+	                top:1px;
+                }
+            }
+        }                
+    }
+    .contenedor-mapa{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .mapa{
+            width:fit-content;
+        }
+    }    
+}

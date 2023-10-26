@@ -1,0 +1,22 @@
+.grilla-contenido-consorcios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 auto);
+    margin: 1rem 3rem 3rem 3rem;
+    gap: 1rem;
+    .card-consorcios{
+        margin-bottom: 30px;
+        @include sombreado(0px, 10px, 23px, 10px, $color-sombreado);
+        padding: 15px;
+        border-radius: 10px;
+
+        .titulo-card-consorcios{
+            padding-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .desc-card-consorcios{
+            text-align: justify;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+@import "variables";
+@import "mixins";
+
+@import "style-generales";
+@import "header";
+@import "style-index";
+@import "style-nosotros";
+@import "style-contacto";
+@import "style-propiedades";
+@import "style-consorcios";
+@import "asistente-flotante";
+@import "footer";
+@import "media-queries";
+
+
+
+
+
+

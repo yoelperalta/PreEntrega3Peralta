@@ -1,0 +1,23 @@
+.grilla-contenido-main{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 50px;
+    grid-template-areas:
+    "mision por-que"
+    "servicios unete"
+    ;
+    .mision{
+        grid-area: mision;
+    }
+    .por-que{
+        grid-area: por-que;
+    }
+    .servicios{
+        grid-area: servicios;
+    }
+    .unete{
+        grid-area: unete;
+    }
+}

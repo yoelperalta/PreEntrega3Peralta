@@ -1,0 +1,34 @@
+.grilla-contenido-nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 auto);
+    margin: 1rem 3rem 3rem 3rem;
+    gap: 1rem;
+    div{
+        width: 100%;
+        text-align: center;
+        img{
+            border-radius: 50%;
+            height: 100px;
+            position: relative;
+            top: -65px;
+        }
+    }
+
+    @each $persona in $personas{
+        .contenedor-#{$persona}{
+            margin-bottom: 100px;
+            @include sombreado(0px, 10px, 23px, 10px, $color-sombreado);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .foto-#{$persona}{
+            height: 50px;
+        }
+        .nombre-#{$persona}{
+            padding-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.grilla-contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "contenedor-andrea contenedor-juan contenedor-maria" 
+    ;
+    .contenedor-andrea{
+        grid-area: contenedor-andrea;
+    }
+    .contenedor-juan{
+        grid-area: contenedor-juan;
+    }
+    .contenedor-maria{
+        grid-area: contenedor-maria;
+    }
+}
+
+

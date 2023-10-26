@@ -1,0 +1,21 @@
+.grilla-contenido-contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    margin: 1rem 3rem 3rem 3rem;
+    gap: 1rem;
+    grid-template-areas: "contenedor-formulario contenedor-mapa";
+    .contenedor-formulario{
+        grid-area: contenedor-formulario;
+    }
+    .contenedor-mapa{
+        grid-area: contenedor-mapa;
+        display: flex;
+        justify-content:flex-start;
+        .mapa{
+            width: 500px;
+            height: 400px;
+        }
+        
+    }
+}

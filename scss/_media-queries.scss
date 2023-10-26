@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    @import "style-header-tablet-desktop";
+    @import "style-index-tablet";
+    @import "style-contacto-tablet";
+    @import "style-propiedades-tablet";
+    @import "style-consorcios-tablet";
+}
+
+@media screen and (min-width: 1024px){
+    @import "style-header-tablet-desktop";
+    @import "style-nosotros-desktop";
+    @import "style-contacto-desktop";
+    @import "style-propiedades-desktop";
+    @import "style-consorcios-desktop";
+}
